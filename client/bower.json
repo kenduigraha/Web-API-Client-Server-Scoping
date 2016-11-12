@@ -1,0 +1,17 @@
+{
+  "name": "Ken Duigraha Putra",
+  "description": "",
+  "main": "js/script.js",
+  "authors": [
+    "Ken Duigraha Putra"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kenduigraha/Web-API-Client-Server-Scoping",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
