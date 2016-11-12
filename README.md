@@ -15,28 +15,15 @@
 4. jQuery
 5. gulp
 6. browser-sync
-7. mongodb
-8. mongoose
-9. nodemon
-10. dotenv
 
 
-## Database's Structure
-
-1. Database's name : db_todo
-2. Collection's name : todo
-3. Fields : content, status
 
 ## End Point API Routes
 Default development host and port : http://localhost:3000
 
 | Routes | HTTP | Action |
 |--------|------|--------|
-| /api/todos | GET | all todos |
-| /api/todos | POST | process new todo |
-| /api/todos/:id | POST | process mark todo status as done |
-| /api/todos/:id | PUT | process edit todo |
-| /api/todos/:id | DELETE | process delete todo |
+| /api/meals | GET | get 1 random meals |
 
 ## package.json (server)
 
