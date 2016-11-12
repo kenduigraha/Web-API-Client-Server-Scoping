@@ -1,7 +1,25 @@
 $(document).ready(function(){
   changeTitle()
   changeTitleSkills()
+  changeTitleMeals()
 })
+
+function changeTitleMeals(){
+  $('#btn_submit_meals').on('click', function(e){
+    e.preventDefault()
+    $.ajax({
+      url: 'http://localhost:3000/api/meals',
+      method: 'GET',
+      dataType: 'JSON',
+      contentType: 'application/www-x-form-urlencoded',
+      success: function(data_meal){
+        console.log(data_meal);
+        $('#title_meals').text(data_meal)
+      }
+    })
+  })
+
+}
 
 function changeTitleSkills(){
   $('#btn_submit_skill').on('click', function(e){
