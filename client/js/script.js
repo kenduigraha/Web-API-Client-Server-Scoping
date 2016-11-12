@@ -4,16 +4,16 @@ $(document).ready(function(){
 })
 
 function changeTitleSkills(){
-  $('#btn_submit_skill').on('click', function(){
-    $.urlParam = function(name){
-    	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    	return results[1] || 0;
-    }
-
-    var new_title = $.urlParam('title').split('%20').join(' ')
-    console.log(new_title);
-
-    $('#title_skills').text(new_title)
+  $('#btn_submit_skill').on('click', function(e){
+    // $.urlParam = function(name){
+    // 	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    // 	return results[1] || 0;
+    // }
+    //
+    // var new_title = $.urlParam('title').split('%20').join(' ')
+    console.log($.url().param('title'));
+    e.preventDefault()
+    $('#title_skills').text($.url().param('title'))
   })
 }
 
