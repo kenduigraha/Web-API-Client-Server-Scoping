@@ -12,6 +12,7 @@
   "dependencies": {
     "bower": "^1.8.0",
     "browser-sync": "^2.17.5",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "purl": "^1.0.4"
   }
 }
