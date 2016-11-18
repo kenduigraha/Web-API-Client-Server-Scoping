@@ -30,8 +30,9 @@ function changeTitleSkills(){
     //
     // var new_title = $.urlParam('title').split('%20').join(' ')
     console.log($.url().param('title'));
-    e.preventDefault()
+    // e.preventDefault()
     $('#title_skills').text($.url().param('title'))
+    e.preventDefault()
   })
 }
 
